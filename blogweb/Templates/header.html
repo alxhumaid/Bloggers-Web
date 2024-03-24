@@ -1,0 +1,109 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&amp;display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/blog/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <script>
+        function india() {
+            setActive('india');
+        }
+        
+        function travel() {
+            setActive('travel');
+        }
+        
+        function business() {
+            setActive('business');
+        }
+        
+        function science() {
+            setActive('science');
+        }
+        
+        function politics() {
+            setActive('politics');
+        }
+        
+        function world() {
+            setActive('world');
+        }
+        
+        function technology() {
+            setActive('technology');
+        }
+        
+        function setActive(id) {
+            const navItems = document.querySelectorAll('.nav-item.nav-link.link-body-emphasis');
+        
+            navItems.forEach(item => {
+                if (item.id === id) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+        }
+        
+    </script>
+  </head>
+    <body>
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+            </ul>
+    
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+              <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+            </form>
+    
+            <div class="text-end">
+              <button type="button" class="btn btn-outline-light me-2">Login</button>
+              <button type="button" class="btn btn-warning">Sign-up</button>
+            </div>
+          </div>
+        </div>
+    </header>
+
+
+    
+        
+    
+    
+    
+        
+        <!-- Custom styles for this template -->
+        <!-- Custom styles for this template -->
+    </head>
+      <body>
+       
+    
+    <div class="container">
+    <div class="nav-scroller py-1 mb-3 border-bottom">
+        <nav class="nav nav-underline justify-content-between">
+          <a class="nav-item nav-link link-body-emphasis active" id="world" onclick="world()" href="/blog/world/">World</a>
+          <a class="nav-item nav-link link-body-emphasis" id="india" onclick="india()" href="/blog/india/">India</a>
+          <a class="nav-item nav-link link-body-emphasis" id="technology" onclick="technology()" href="/blog/technology/">Technology</a>
+          <a class="nav-item nav-link link-body-emphasis" id="business" onclick="business()" href="/blog/business/">Business</a>
+          <a class="nav-item nav-link link-body-emphasis" id="politics" onclick="politics()" href="/blog/politics/">Politics</a>
+          <a class="nav-item nav-link link-body-emphasis" id="science" onclick="science()" href="/blog/science/">Science</a>
+          <a class="nav-item nav-link link-body-emphasis" id="travel" onclick="travel()" href="/blog/travel/">Travel</a>
+        </nav>
+      </div>
+    </div>
